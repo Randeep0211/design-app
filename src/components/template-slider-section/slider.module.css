@@ -1,0 +1,9 @@
+.container {
+  background: linear-gradient(to bottom right, #2b8ffa, #9773d3);
+  height: 600px;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-around;
+}
