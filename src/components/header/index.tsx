@@ -11,23 +11,33 @@ const Header = () => {
 
       <div className={styles.container}>
         <div>
-          <span>Home</span>
+          <a href="/">
+            <span>Home</span>
+          </a>
         </div>
 
         <div>
-          <span>Features</span>
+          <a href="">
+            <span>Features</span>
+          </a>
         </div>
 
         <div>
-          <span>Pricing</span>
+          <a href="">
+            <span>Pricing</span>
+          </a>
         </div>
 
         <div>
-          <span>Download</span>
+          <a href="">
+            <span>Download</span>
+          </a>
         </div>
 
         <div>
-          <span>Contact</span>
+          <a href="">
+            <span>Contact</span>
+          </a>
         </div>
 
         <div>

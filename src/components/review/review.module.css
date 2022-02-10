@@ -1,0 +1,47 @@
+.container {
+  background-color: #7b68ee;
+  height: 370px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  font-weight: 800;
+  font-size: larger;
+  width: 463px;
+  margin: auto;
+  text-align: justify;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+hr {
+  width: 100px;
+  margin-left: 8px;
+  margin-top: 15px;
+}
+
+.image {
+  width: 480px;
+  height: 390px;
+  position: relative;
+  top: -12px;
+  bottom: -30px;
+}
+
+.image1 {
+  margin-right: 134px;
+  margin-top: 25px;
+}
+
+.title {
+  font-size: small;
+  margin-top: 30px;
+}
+
+.position {
+  font-weight: 400;
+  font-size: small;
+  margin-top: 1px;
+}
