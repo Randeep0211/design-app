@@ -1,15 +1,17 @@
 import React from 'react';
 import TemplateSlider from '../../components/template-slider-section';
-import OrendoDetail from '../../components/orendo-detail';
+import Orendo from '../../components/orendo';
 import Review from '../../components/review';
-import Sticker from '../../components/stickers';
+import StickerList from '../../components/sticker-list';
+import { Images } from '../../images';
+import { OrendoData } from '../../data';
 
 const Homepage = () => {
   return (
     <div>
       <TemplateSlider />
-      <Sticker />
-      <OrendoDetail />
+      <StickerList Images={Images} />
+      <Orendo OrendoData={OrendoData} />
       <Review />
     </div>
   );

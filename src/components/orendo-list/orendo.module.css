@@ -1,0 +1,21 @@
+.img {
+  max-width: 80px;
+  border: 1px solid transparent;
+  border-radius: 70px;
+  padding: 20px 20px;
+  background-color: white;
+}
+
+.description {
+  text-align: center;
+  width: 377px;
+  margin: auto;
+  font-weight: 400;
+  font-size: medium;
+  line-height: 26px;
+  color: rgb(88, 88, 88);
+}
+
+h2 {
+  color: #725ee4;
+}
