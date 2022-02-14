@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './orendo.module.css';
 import OrendoList from '../orendo-list';
-import { OrendoData } from '../../data';
+// import { OrendoData } from '../../data';
+import axios from 'axios';
 
 interface OrendoProps {
-  OrendoData: {
-    image: string;
-    title: string;
-    description: string;
-  }[];
+  image: string;
+  title: string;
+  description: string;
 }
 
-const Orendo: React.FC<OrendoProps> = () => {
+const Orendo = () => {
+  const [data, setData] = React.useState<OrendoProps[]>([]);
+
+  const getData = async () => {
+    try {
+      const data = await axios.get('http://localhost:4000/data');
+      setData(data.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.tag}>
@@ -21,7 +35,7 @@ const Orendo: React.FC<OrendoProps> = () => {
         <span>Companies choose Orenda because</span>
       </div>
       <div className={styles.containerOne}>
-        {OrendoData.map((el, index) => {
+        {data.map((el, index) => {
           return (
             <OrendoList
               key={index}

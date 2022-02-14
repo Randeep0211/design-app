@@ -11,7 +11,7 @@ const Homepage = () => {
     <div>
       <TemplateSlider />
       <StickerList Images={Images} />
-      <Orendo OrendoData={OrendoData} />
+      <Orendo />
       <Review />
     </div>
   );
